@@ -31,6 +31,9 @@ def actjac(actfs,xs):
     actfs_xs = actfs(xs)
     return Jf, actfs_xs
 
+
+
+
 if __name__ == '__main__':
     nvar, m, xini, xfin, dt = params()
     xolds = np.array([2-0.02*i for i in range(1,nvar+1)])
